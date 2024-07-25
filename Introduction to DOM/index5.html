@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video controls>
+        <source src="video.mp4" type="video/mp4" />
+        </video>
+        <p>
+        <input id="play" type="submit" value="Play" onclick="playVideo()"/>
+        <input id="pause" type="submit" value="Pause" onclick="pauseVideo()"/>
+        <input id="restart" type="submit" value="Go to the Beginning" onclick="restartVideo()" />
+        <input id="skipForward" type="submit" value="Go Forward 10 Seconds" onclick="skipVideo()"/>
+        Timestamp: <span id="timestamp" timeupdate="updateTimestamp()">0:00</span>
+        </p>
+</body>
+<script src="js/index5.js"></script>
+</html>
